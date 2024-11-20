@@ -1,0 +1,129 @@
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    
+    body{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+  
+    .header__container{
+    max-width: 630px;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .header__title{
+    font-size: 3.5rem;
+  }
+
+  .header__menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    }   
+
+    .menu__link:hover {
+        color: var(--primary-color);
+        transition: all 0.2s;
+    }
+
+
+    .section__gallery{
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    .intro__text{
+        margin: 50px 20px;
+        font-size: 1.5rem;
+        
+    }
+
+    .section__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service__description:hover{
+        transform: scale(0.9);
+        transition: all 0.2s;
+    }
+    
+    .section--news{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+}
+
+@media (max-width: 480px) {
+    body{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .header__container{
+        max-width: 360px;
+        display: flex;
+        justify-content: space-around;
+    
+      }
+    
+      .header__title{
+        font-size: 3.5rem;
+      }
+    
+      .header__menu {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        }   
+    
+        .menu__link:hover {
+            color: var(--primary-color);
+            transition: all 0.2s;
+        }
+    
+    
+        .section__gallery{
+            background-image: none;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+    
+        }
+    
+        .intro__text{
+            margin: 50px 20px;
+            font-size: 1.5rem;
+            
+        }
+    
+        .section__content{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .service__description:hover{
+            transform: scale(0.9);
+            transition: all 0.2s;
+        }
+        
+        .section--news{
+            display: flex;
+            flex-direction: column;
+        }
+    
+
+}

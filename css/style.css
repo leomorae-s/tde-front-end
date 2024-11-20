@@ -1,0 +1,296 @@
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
+:root {
+    --primary-color: #AE0000;
+    --secondary-color: #FFD700;
+    --terciary-color: #006400;
+    --quaternary-color: #D3D3D3;
+    --bg-color: #121212;
+    --accent-color: #8B8989;
+    --highlight-color: #B8860B;
+    --subtle-color: #2C2F33;
+    --text-color: #E0E0E0; 
+    --header-bg-color: #1C1C1C;
+    --link-hover-color: #872E23; 
+}
+
+/* Layout */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Harry potter', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Harry potter', sans-serif;
+    letter-spacing: 3px;
+}
+
+/* Header */
+.header {
+    background-color: var(--header-bg-color);
+    padding: 1.5rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.header__title {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    justify-content: start;
+    font-family: 'Harry potter', sans-serif;
+}
+
+.header__menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+
+.menu__link {
+    color: var(--quaternary-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu__link:hover {
+    color: var(--primary-color);
+    transition: all 0.2s;
+}
+
+/* Seções */
+.section {
+    padding: 3rem 2rem;
+}
+
+.section--intro {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
+    color: var(--secondary-color);
+    background-image: url(../img/headerback.png);
+    background-size: cover;
+}
+
+.intro__text{
+    margin: 50px 20px;
+    font-size: 1.5rem;
+    
+}
+
+
+
+.intro__title {
+    font-size: 3.5rem;
+    margin: 50px 20px;
+}
+
+.intro__button {
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin: 50px 20px;
+    text-decoration: none;
+    border-radius: 2px;
+    
+  
+
+}
+
+.intro__button:hover{
+    background-color: var(--primary-color);
+    transition: all 0.2s;
+}
+
+/* About */
+.section--about {
+ 
+    background-color: var(--highlight-color);
+    padding-top: 50px;
+}
+
+.section__title, .section__text {
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section__title{
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+}
+
+.section__text{
+    font-size: 1.5rem;
+}
+
+.section--gallery{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    display: flex;
+    
+}
+
+
+.about__item {
+    background-color: var(--subtle-color);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 30px 20px;
+    
+}
+
+.about__item:hover {
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+    transition: all 0.5s;
+}
+
+/* Gallery */
+.gallery__caption {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+
+.gallery__grid{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.gallery__item{
+    margin-left: 400px;
+}
+
+
+/* Botão */
+.btn-more {
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 20px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 20px 0;
+}
+
+.btn-more:hover {
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
+
+.section__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.section__grid{
+    display: flex;
+    flex-direction: row;
+}
+
+.service__title{
+    margin: 30px 20px;
+    font-size: 3.5rem;
+}
+
+.service__description{
+    display: flex;
+    font-size: 1.5rem;
+    background-color: var(--highlight-color);
+    height: 20vh;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.service__description:hover{
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
+
+.section--news{
+    display: flex;
+    flex-direction: column;
+}
+
+.news__grid{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.news__item{
+    max-width: 15vw;
+}
+
+
+.contact__form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form__button{
+    width: 200px;
+    align-self:  center;
+}
+
+textarea{
+    width: 150px;
+    
+    height: 30px;
+}
+
+.footer__content{
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.footer__social{
+    display: flex;
+    gap: 30px;
+
+
+}
+
+.footer__social li a{ 
+    text-decoration: none;
+    color: var(--secondary-color);
+
+}
+
+.footer__social li .social__link{
+    color: var(--highlight-color);
+}
+
